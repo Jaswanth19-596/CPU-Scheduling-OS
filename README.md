@@ -34,15 +34,15 @@ This is a process scheduler simulation program written in C++. It simulates the 
 
 The input file should contain descriptions of processes in the following format:
 
-INTERACTIVE 12000
-CPU 100
-TTY 5000
-CPU 100
-DISK 10
-CPU 20
-REAL-TIME 12000
-DEADLINE 13000
-CPU 30
+INTERACTIVE 12000\
+CPU 100\
+TTY 5000\
+CPU 100\
+DISK 10\
+CPU 20\
+REAL-TIME 12000\
+DEADLINE 13000\
+CPU 30\
 
 
 
