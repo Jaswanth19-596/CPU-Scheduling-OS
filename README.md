@@ -42,7 +42,7 @@ DISK 10\
 CPU 20\
 REAL-TIME 12000\
 DEADLINE 13000\
-CPU 30\
+CPU 30
 
 
 
@@ -52,6 +52,75 @@ CPU 30\
 ## Output Format
 
 The program outputs the simulation results including the initial and final states of processes, as well as statistics such as the number of completed processes, percentage of real-time processes that missed their deadline, and CPU and disk utilization.
+
+
+
+
+Initial States of the Processes : 
+
+Key: 1
+Value:
+    Process ID: 1
+    Process Class: REAL-TIME
+    Arrival Time: 12000
+    Process Status: NEW
+Key: 0
+Value:
+    Process ID: 0
+    Process Class: INTERACTIVE
+    Arrival Time: 12000
+    Process Status: NEW
+
+
+CPU is idle, executing the Real time process
+Assigned the CPU to the Real time process
+The Process 1 of class REAL-TIME is going to access the CPU
+Proceess 1 of class REAL-TIME has been successfully executed!!
+
+
+
+Assigned INTERACTIVE process to the CPU
+The Process 0 of class INTERACTIVE is going to access the CPU
+The Process 0 of class INTERACTIVE is going to access the TTY
+The Process 0 of class INTERACTIVE is going to access the CPU
+The Process 0 of class INTERACTIVE is going to access the DISK
+The process of class INTERACTIVE came out of Disk queue
+
+
+Assigned INTERACTIVE process to the CPU
+The Process 0 of class INTERACTIVE is going to access the CPU
+Proceess 0 of class INTERACTIVE has been successfully executed!!
+
+
+Final State of the Processes :
+
+Key: 1
+Value:
+    Process ID: 1
+    Process Class: REAL-TIME
+    Arrival Time: 12000
+    Process Status: EXECUTED
+Key: 0
+Value:
+    Process ID: 0
+    Process Class: INTERACTIVE
+    Arrival Time: 12000
+    Process Status: EXECUTED
+
+
+Final statistics : 
+
+Number of real-time processes that have been Completed                 : 1
+percentage of real-time processes that missed their deadline           : 0%
+Total Number of Interactive processes that have been Completed         : 1
+Total Number of Disk Accesses                                          : 1
+Average Duration of Disk Accesses                                      : 10
+Total Time Elapsed since the start of the First Process                : 5261
+CPU Utilization                                                        : 4.75195%
+Disk Utilization                                                       : 0.190078%
+
+
+
 
 ## Contributing
 
